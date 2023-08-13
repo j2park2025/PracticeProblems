@@ -1,0 +1,19 @@
+a=str(input(""))
+a_ls=a.split()
+m=int(a_ls[0])
+f=int(a_ls[1])
+n=int(a_ls[2])
+
+climb=0
+x=f
+elev=0
+goal=n
+while(goal>0):
+    if((goal==0)):
+        break
+    if(x==m):
+        x=0
+        elev+=1
+    x+=1
+    goal-=1
+print(elev)
